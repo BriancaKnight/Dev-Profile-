@@ -40,6 +40,6 @@ This webpage acts as a profile to showcase my programming skills. Its sections i
 
 Copyright (c) 2023 Brianca Knight
 
-<!-- ![App Diagram](src/images/Inventory-Tracker.jpeg) -->
+![App Diagram](src/images/diagram.drawio)
 
  
