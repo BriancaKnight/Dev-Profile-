@@ -40,6 +40,6 @@ This webpage acts as a profile to showcase my programming skills. Its sections i
 
 Copyright (c) 2023 Brianca Knight
 
-![App Diagram](src/images/diagram.drawio)
+![App Diagram](src/images/diagram.png)
 
  
