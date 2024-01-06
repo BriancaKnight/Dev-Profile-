@@ -2,7 +2,10 @@ import React from 'react';
 
 function Resume() {
   return (
-    <h1>This is where my resume will be!</h1>
+    <>
+    <h3>Ask and you shall receive!</h3>
+    {/* <iframe src='../../images//KnightResume23.pdf' title="resume" width="100%" height="500px"></iframe> */}
+    </>
   );
 }
 
