@@ -1,8 +1,25 @@
 import React from 'react';
+import Splash from './Splash';
+import Header from './Header';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggle } from '../redux/splashSlice'
 
 function Control() {
+  const dispach = useDispatch();
+  const splash = useSelector((state) => state.splash);
+
+  const handleScroll = () => {
+    dispach(toggle());
+  };
+
   return (
-    <h2>This is where the control center will be!</h2>
+      <div onScroll={handleScroll}>
+      {splash ? (
+        <Splash />
+    ) : (
+      <Header />
+    )}
+    </div>
   );
 }
 
