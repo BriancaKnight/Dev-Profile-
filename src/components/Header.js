@@ -1,17 +1,21 @@
 import React from 'react';
 import './Header.css';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setSelectedLink } from '../redux/linkSlice';
+import { toggleHeaderVisibility } from '../redux/headerSlice';
 
 function Header() {
 
   const dispatch = useDispatch();
+  const isHeaderVisible = useSelector((state) => state.headerVisible.isVisible);
 
   const handleLinkClick = (link) => {
     dispatch(setSelectedLink(link));
+    dispatch(toggleHeaderVisibility());
   };
 
   return (
+    (isHeaderVisible && (
     <div className='headerContainer'>
       <div className='headerNavigation'>
         <h4 onClick={() => handleLinkClick('BIO')}>BIO</h4>
@@ -28,7 +32,8 @@ function Header() {
         </div>
       </div>
     </div>
+    ))
   );
-}
+    }
 
 export default Header;

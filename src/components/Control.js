@@ -1,8 +1,5 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-// import { toggle } from '../redux/splashSlice';
-// import { setSelectedLink } from '../redux/linkSlice';
-// import { toggleHeaderVisibility, setHeaderVisibility } from '../redux/headerSlice';
 import Splash from './Splash';
 import Header from './Header';
 import Bio from './Bio';
