@@ -1,17 +1,14 @@
 import React from 'react';
 import './Header.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { setSelectedLink } from '../redux/linkSlice';
-import { toggleHeaderVisibility } from '../redux/headerSlice';
 
 function Header() {
 
   const dispatch = useDispatch();
-  // const isHeaderVisible = useSelector((state) => state.headerVisible.isVisible);
 
   const handleLinkClick = (link) => {
     dispatch(setSelectedLink(link));
-    // dispatch(toggleHeaderVisibility());
   };
 
   return (
