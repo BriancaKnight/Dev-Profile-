@@ -10,13 +10,13 @@ import ContactInfo from './ContactInfo';
 function Control() {
 
   const isSplashVisible = useSelector((state) => state.splash);
-  const isHeaderVisible = useSelector((state) => state.headerVisible.isVisible);
   const selectedLink = useSelector((state) => state.link.selectedLink);
+  const isHeaderVisible = !isSplashVisible || (selectedLink !== '');
 
   return (
     <>
       {isSplashVisible && <Splash />}
-      {isHeaderVisible && !isSplashVisible && <Header />}
+      {isHeaderVisible && <Header />}
       {selectedLink === 'BIO' && <Bio />}
       {selectedLink === 'PROJECTS' && <Projects />}
       {selectedLink === 'RESUME' && <Resume />}

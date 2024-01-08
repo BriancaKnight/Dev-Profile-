@@ -7,15 +7,14 @@ import { toggleHeaderVisibility } from '../redux/headerSlice';
 function Header() {
 
   const dispatch = useDispatch();
-  const isHeaderVisible = useSelector((state) => state.headerVisible.isVisible);
+  // const isHeaderVisible = useSelector((state) => state.headerVisible.isVisible);
 
   const handleLinkClick = (link) => {
     dispatch(setSelectedLink(link));
-    dispatch(toggleHeaderVisibility());
+    // dispatch(toggleHeaderVisibility());
   };
 
   return (
-    (isHeaderVisible && (
     <div className='headerContainer'>
       <div className='headerNavigation'>
         <h4 onClick={() => handleLinkClick('BIO')}>BIO</h4>
@@ -32,8 +31,7 @@ function Header() {
         </div>
       </div>
     </div>
-    ))
-  );
+    );
     }
 
 export default Header;
