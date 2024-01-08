@@ -10,20 +10,20 @@
 
 .navigation {
   display: flex;
-  flex-direction: column; /* Stack items in a column */
+  flex-direction: column; 
   font-size: 13px;
   margin-left: 0%;
 }
 
 .navigation h4 {
-  margin-top: 0; /* Adjust vertical margin */
+  margin-top: 0; 
   margin-bottom: 0;
   margin-left: 0px;
 }
 
 .content {
   display: flex;
-  flex-direction: column; /* Stack items in a column */
+  flex-direction: column;
 }
 
 .title {
@@ -42,33 +42,3 @@ h2 {
   letter-spacing: 8px;
 }
 
-
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
-
-.container {
-  margin-right: 1%;
-  font-family: 'Montserrat', sans-serif;
-}
-
-h1 {
- text-align: right;
- margin-top: 0;
- margin-bottom: 0;
- font-size: 50px;
- letter-spacing: 5px;
-}
-
-h2 {
-  text-align: right;
-  margin-top: 0;
-  font-size: medium;
-  letter-spacing: 8px;
-}
-
-.navigation {
-  margin-right: 5%;
-  margin-left: 5%;
-  display: flex;
-  justify-content: space-between;
-
-} */
