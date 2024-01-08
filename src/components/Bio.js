@@ -1,6 +1,6 @@
 import React from 'react';
 
-function About() {
+function Bio() {
   return (
     <>
       <h2>Hi there.</h2>
@@ -11,4 +11,4 @@ function About() {
   );
 }
 
-export default About;
+export default Bio;
