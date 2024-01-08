@@ -6,13 +6,10 @@ const splashSlice = createSlice({
   name: "splash",
   initialState: initialState,
   reducers: {
-    toggle: (state) => {
-      return !state;
+    toggle: (state) => !state,
   },
-},
 });
 
 
 export default splashSlice.reducer;
-
 export const { toggle } = splashSlice.actions;

@@ -1,8 +1,29 @@
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggle } from '../redux/splashSlice';
+import { setSelectedLink } from '../redux/linkSlice';
+import Header from './Header'
 
 function Control() {
+
+  const dispatch = useDispatch();
+  const isSplashVisible = useSelector((state) => state.splash);
+
+  const handleLinkClick = (link) => {
+    if (isSplashVisible) {
+      dispatch(toggle());
+    }
+  
+    dispatch(setSelectedLink(link));
+  };
+
   return (
-    <h2>This is where the control center will be!</h2>
+    <>
+    <Header />
+      <h2 onClick={handleLinkClick}>Control Center</h2>
+      <h2 onClick={() => handleLinkClick('BIO')}>BIO</h2>
+      <h2 onClick={() => handleLinkClick('RESUME')}>RESUME</h2>
+    </>
   );
 }
 

@@ -7,8 +7,8 @@ import background from '../images/background.png'
 function App(){
   return (
     <React.Fragment>
-      <Splash />
-      {/* <Control /> */}
+      {/* <Splash /> */}
+      <Control />
     </React.Fragment>
   );
 }
