@@ -8,7 +8,7 @@ function Resume() {
     <>
       <div className='resumeStyle'>
         <div className='resumeHeader'>
-          <h2>Ask and you shall receive!</h2>
+          <h2>Knight Resume '24</h2>
         </div>
         <div className='img'>
           <img src={myResume} alt="Knight Resume '24" />
