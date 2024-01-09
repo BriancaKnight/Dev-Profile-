@@ -1,0 +1,27 @@
+.resumeStyle {
+  background-color:rgba(164, 119, 139, 0.15); 
+  padding: 20px; 
+  margin: 10%; 
+}
+
+.resumeHeader h2{
+  font-size: 30px;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-bottom: 3%;
+}
+
+.img {
+  text-align: center;
+}
+
+.resumeCloser h2 {
+  margin-top: 3%;
+  text-align: center;
+  font-size: 22px;
+}
+
+.resumeCloser a:hover {
+  font-size: 110%; 
+  transition: font-size 0.3s ease;
+}
