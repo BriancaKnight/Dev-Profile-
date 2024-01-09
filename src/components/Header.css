@@ -1,18 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 .headerContainer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;;
   margin-right: 1%;
-  font-family: 'Montserrat', sans-serif;
 } 
 
 .headerNavigation {
   display: flex;
   flex-direction: column; 
   font-size: 13px;
-  margin-left: 0%;
+  align-items: flex-end; 
+  margin-top: 20px;
 }
 
 .headerNavigation h4 {
@@ -21,24 +20,26 @@
   margin-left: 0px;
 }
 
+.headerNavigation h4:hover {
+  font-size: 114%; 
+  transition: font-size 0.3s ease;
+}
+
 .headerContent {
   display: flex;
   flex-direction: column;
 }
 
-.headerTitle {
-  text-align: center;
-}
-
-h1 {
+.headerName h1{
   margin: 0;
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 5px;
 }
 
-h2 {
+.headerTitle h2{
   margin: 0;
   font-size: medium;
   letter-spacing: 8px;
-} */
+  margin-bottom: 20%
+}
 
