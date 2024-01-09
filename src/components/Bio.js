@@ -1,12 +1,18 @@
 import React from 'react';
+import './Bio.css';
 
 function Bio() {
   return (
     <>
+    <div className='bioStyle'> 
+    <div className='bioHeader'>
       <h2>Hi there.</h2>
-      <h3>I'm Brianca.</h3>
-      <p>Hi there! My name is Brianca Knight, I am a junior programmer with experience in marketing, production, and community engagement. I hope to utilize my previous work experience within the world of UI/UX to create visually compelling websites that are intuitive and appealing to the user.</p>
-      <p>In my freetime I enjoy theatre, live music, and writing. In the summer you can find me swimming in the river, but in the winter you'll find me curled up playing videogames (my favorite right now is stardew valley!)</p>
+      </div>
+      <div className='bioP'>
+      <p>I’m Brianca, a junior developer zooming towards a career in UI design. Equipped with a background in the arts, marketing, and community engagement I’ve spent the last 5 years crafting campaigns for small businesses, non-profits, and artists alike. My new goal? To blend my creative flair with intuitive design to craft a little digital magic.</p>
+      <p>Please, take a little time to browse my projects and resume. If you're intruiged, feel free to reach out! I'd love to hear from you.</p>
+      </div>
+      </div>
     </>
   );
 }

@@ -1,0 +1,19 @@
+.bioStyle {
+  background-color:rgba(164, 119, 139, 0.15); 
+  padding: 20px; 
+  margin: 10%; 
+}
+
+.bioHeader h2{
+  font-size: 55px;
+  margin-top: 3%;
+  margin-right: 7%;
+  margin-bottom: 1%;
+}
+
+.bioP {
+  margin-top: 0;
+  margin-right: 7%;
+  margin-bottom: 3%;
+  margin-left: 7%;
+}
